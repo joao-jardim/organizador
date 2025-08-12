@@ -1,0 +1,36 @@
+-> organizador. 
+o que eu quero? 
+    quero um programa que tenha um menu para eu administrar uma 
+    lista de interesse. 
+
+o que o programa faz?
+    adiciona listas
+    remove listas
+    adiciona itens a listas
+    ordena itens
+    classifica itens
+    adiciona classificações
+    visualiza listas 
+
+como? 
+    classe lista 
+        possui um conjunto de itens 
+
+        adiciona lista 
+            pode ser uma lista com ordem de prioridade, ou nao.
+                para listas com prioridade, o item precisa ter um
+                numero de prioridade
+        remove lista 
+        mostra lista 
+
+    classe item 
+        possui uma classificação (alimento, objeto, etc...)
+        possui um nome 
+        possui um número de prioridade (ou não)
+
+        adiciona item 
+        remove item 
+        visualiza item 
+
+Menu:
+    - Minhas listas
