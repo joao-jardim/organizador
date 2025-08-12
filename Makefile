@@ -1,9 +1,9 @@
 # Compilador e flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
+CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude
 
 # Arquivos-fonte e objetos
-SRC = main.cpp Menu.cpp
+SRC = src/main.cpp src/Menu.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # Nome do executável
@@ -17,7 +17,7 @@ $(TARGET): $(OBJ)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 # Como compilar arquivos .cpp em .o
-%.o: %.cpp %.hpp
+src/%.o: src/%.cpp include/%.hpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Limpar arquivos compilados
